@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Offline Sync</title>
+</head>
+
+<body>
+
+  <main>
+    <header>
+      <h1>Backup Jobs</h1>
+    </header>
+
+    <!-- Single Job Card -->
+    <section aria-label="Backup job">
+
+      <h2>Documents Sync</h2>
+
+      <p>
+        <strong>Last sync:</strong>
+        <span id="lastSync">Never</span>
+      </p>
+
+      <p>
+        <label for="sourceInput"><strong>Source:</strong>
+          <input type="file" webkitdirectory directory id="sourceInput" /></label>
+      </p>
+
+      <p>
+        <label for="targetInput"><strong>Target:</strong>
+          <input type="file" webkitdirectory directory id="targetInput" /></label>
+        <!-- <span id="driveStatus">(Not connected)</span> -->
+      </p>
+
+      <hr />
+
+      <p>
+        <strong>Files compared:</strong>
+        <span id="filesCompared">0</span>
+      </p>
+
+      <p>
+        <strong>Files updated:</strong>
+        <span id="filesUpdated">0</span>
+      </p>
+
+      <button id="syncNowBtn">
+        Sync Now
+      </button>
+
+    </section>
+  </main>
+  <script src="./renderer.js"></script>
+</body>
+
+</html>

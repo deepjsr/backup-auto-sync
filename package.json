@@ -1,0 +1,15 @@
+{
+  "name": "backp-auto-sync",
+  "version": "1.0.0",
+  "description": "auto sync your drive for seemless backup.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Deep Sarma",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^40.1.0"
+  }
+}
